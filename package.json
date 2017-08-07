@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-cp",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "Simple plugin for copynig files to a new destincation",
   "main": "index.js",
   "repository": "https://github.com/sly-x86/rollup-plugin-cp.git",

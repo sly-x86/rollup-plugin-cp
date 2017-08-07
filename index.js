@@ -1,7 +1,12 @@
-var fse = require("fs-extra");
+var fse = require('fs-extra');
+var colors = require('colors');
+
+function logError(message) {
+    console.log(message.red);
+}
 
 module.exports = function(options) {
-    const name = "rollup-plugin-copy";
+    const name = 'rollup-plugin-copy';
     options = options || {};
 
     return {
@@ -14,9 +19,7 @@ module.exports = function(options) {
 
                 fse.copy(src, dst)
                 .catch( (err) => {
-                    console.log(
-                        colors.error(name + " (" + src + " -> " + dst + ") " + err.no + " " + err)
-                    );
+                    logError(name + ' (' + src + ' -> ' + dst + ') ' + err.no + ' ' + err);
                 });
             }
 
