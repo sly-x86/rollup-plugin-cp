@@ -1,0 +1,20 @@
+{
+  "name": "rollup-plugin-cp",
+  "version": "0.1.0",
+  "description": "Simple plugin for copynig files to a new destincation",
+  "main": "index.js",
+  "repository": "https://github.com/sly-x86/rollup-plugin-cp.git",
+  "scripts": {},
+  "keywords": [
+    "rollup",
+    "copy",
+    "plugin",
+    "rollup-plugin"
+  ],
+  "author": "Sergei SLY Solomonov <sergei.solomonov@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "fs-extra": "^4.0.1"
+  }
+}
